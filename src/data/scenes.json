@@ -1,0 +1,85 @@
+{
+  "scenes": [
+    {
+      "id": "scene1",
+      "title": "🏛️ Museum Hall",
+      "image": "https://raw.githubusercontent.com/mpetroff/pannellum-demo/master/example-images/museum.jpg",
+      "defaultView": {
+        "pitch": 10,
+        "yaw": -30
+      },
+      "guides": [
+        {
+          "title": "🌿 Explore Courtyard",
+          "targetSceneId": "scene2"
+        },
+        {
+          "title": "🕌 Visit Palace Interior",
+          "targetSceneId": "scene3"
+        }
+      ],
+      "hotspots": [
+        {
+          "id": 1,
+          "pitch": 0,
+          "yaw": 45,
+          "type": "info",
+          "text": "Ancient Moroccan artifacts from the 12th century"
+        }
+      ]
+    },
+    {
+      "id": "scene2",
+      "title": "🌿 Moroccan Courtyard",
+      "image": "https://raw.githubusercontent.com/mpetroff/pannellum-demo/master/example-images/ceremony.jpg",
+      "defaultView": {
+        "pitch": -10,
+        "yaw": 90
+      },
+      "guides": [
+        {
+          "title": "🏛️ Return to Museum Hall",
+          "targetSceneId": "scene1"
+        },
+        {
+          "title": "🕌 Enter Palace",
+          "targetSceneId": "scene3"
+        }
+      ],
+      "hotspots": [
+        {
+          "id": 2,
+          "pitch": -10,
+          "yaw": 90,
+          "type": "info",
+          "text": "Traditional Moroccan fountain and gardens"
+        }
+      ]
+    },
+    {
+      "id": "scene3",
+      "title": "🕌 Palace Interior",
+      "image": "https://raw.githubusercontent.com/mpetroff/pannellum-demo/master/example-images/palacio.jpg",
+      
+      "defaultView": {
+        "pitch": 0,
+        "yaw": 0
+      },
+      "guides": [
+        {
+          "title": "🌿 Back to Courtyard",
+          "targetSceneId": "scene2"
+        }
+      ],
+      "hotspots": [
+        {
+          "id": 3,
+          "pitch": 0,
+          "yaw": 0,
+          "type": "info",
+          "text": "Royal throne room with stunning architecture"
+        }
+      ]
+    }
+  ]
+}
